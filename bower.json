@@ -1,0 +1,16 @@
+{
+  "name": "Scroll-TwoLayer-Demo",
+  "version": "0.0.0",
+  "authors": [
+    "tiantianquan <fenqiufen@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

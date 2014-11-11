@@ -1,0 +1,67 @@
+@import"bourbon";
+@import"neat";
+@import"bootstrap";
+// @font-face {
+//   font-family: ;
+//   src:url();
+// }
+$box-height:957px !default;
+* {
+  font-family: Roboto, sans-serif;
+}
+html, body {
+  height: 100%;
+
+}
+.content-box {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+.content-box span {
+  position: absolute;
+  top: 50%;
+  @include transform(translate(0,-50%));
+  text-align: center;
+  font-weight: 800;
+  font-size: 50px;
+  width: 100%;
+  text-transform: uppercase;
+}
+div.content-box2, .content-box4 {
+  background-color: #fff;
+  color: #000;
+}
+div.content-box1, div.content-box3 {
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+div.content-box1 {
+  background-image: url("/img/first-img.jpg");
+}
+div.content-box3 {
+  background-image: url("/img/second-img.jpg");
+}
+
+ul.nav-right{
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  @include transform(translate(0,-50%));
+  right: 10px;
+  z-index: 10;
+  a{
+    margin-bottom: 5px;
+    display: block;
+    @include transition(all .3s);
+    // font-size: 10pt;
+    &:hover{
+      text-decoration: none;
+      // text-shadow: 0 0 5px lighten(#000,80%);;
+      color:lighten(#000,0);
+    }
+  }
+}
