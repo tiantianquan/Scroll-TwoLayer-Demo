@@ -5,7 +5,6 @@
 //   font-family: ;
 //   src:url();
 // }
-$box-height:957px !default;
 * {
   font-family: Roboto, sans-serif;
 }
@@ -26,6 +25,10 @@ html, body {
   font-size: 50px;
   width: 100%;
   text-transform: uppercase;
+  &::selection {
+    background-color: #000;
+    color: #fff;
+  }
 }
 div.content-box2, .content-box4 {
   background-color: #fff;
@@ -36,6 +39,9 @@ div.content-box1, div.content-box3 {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  span{
+    opacity: .9;
+  }
 }
 div.content-box1 {
   background-image: url("/img/first-img.jpg");
